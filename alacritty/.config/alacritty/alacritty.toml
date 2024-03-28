@@ -1,0 +1,146 @@
+[window]
+dynamic_title = true
+decorations_theme_variant = "None"
+decorations = "buttonless"
+opacity = 0.9
+blur = true 
+
+[window.padding]
+x = 15
+y = 15
+
+[cursor]
+style = "Beam"
+thickness = 0.3
+unfocused_hollow = true
+
+[selection]
+save_to_clipboard = true
+
+[scrolling]
+history = 5000
+
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Plus"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ToggleFullscreen"
+key = "F11"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "Paste"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "Copy"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "ClearLogNotice"
+key = "L"
+mods = "Control"
+
+
+# Rosé Pine Theme
+
+[colors.primary]
+foreground = "#e0def4"
+background = "#232136"
+dim_foreground = "#908caa"
+bright_foreground = "#e0def4"
+
+[colors.cursor]
+text = "#e0def4"
+cursor = "#56526e"
+
+[colors.vi_mode_cursor]
+text = "#e0def4"
+cursor = "#56526e"
+
+[colors.search.matches]
+foreground = "#908caa"
+background = "#393552"
+
+[colors.search.focused_match]
+foreground = "#232136"
+background = "#ea9a97"
+
+[colors.hints.start]
+foreground = "#908caa"
+background = "#2a273f"
+
+[colors.hints.end]
+foreground = "#6e6a86"
+background = "#2a273f"
+
+[colors.line_indicator]
+foreground = "None"
+background = "None"
+
+[colors.footer_bar]
+foreground = "#e0def4"
+background = "#2a273f"
+
+[colors.selection]
+text = "#e0def4"
+background = "#44415a"
+
+[colors.normal]
+black = "#393552"
+red = "#eb6f92"
+green = "#3e8fb0"
+yellow = "#f6c177"
+blue = "#9ccfd8"
+magenta = "#c4a7e7"
+cyan = "#ea9a97"
+white = "#e0def4"
+
+[colors.bright]
+black = "#6e6a86"
+red = "#eb6f92"
+green = "#3e8fb0"
+yellow = "#f6c177"
+blue = "#9ccfd8"
+magenta = "#c4a7e7"
+cyan = "#ea9a97"
+white = "#e0def4"
+
+[colors.dim]
+black = "#6e6a86"
+red = "#eb6f92"
+green = "#3e8fb0"
+yellow = "#f6c177"
+blue = "#9ccfd8"
+magenta = "#c4a7e7"
+cyan = "#ea9a97"
+white = "#e0def4"
+
+
+[font]
+size = 13.5
+
+[font.normal]
+family = "JetBrains Mono"
+#family = "Fira Code"
+style = "Regular"

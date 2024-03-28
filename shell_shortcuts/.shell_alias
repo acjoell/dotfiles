@@ -1,0 +1,57 @@
+## ******************************** ##
+##  These are my aliases for Linux  ##
+## ******************************** ##
+
+## Quick way to get out of current directory ##
+alias ..='cd ..'
+alias ...='cd ../../'
+
+## To print the existing paths ##
+alias mypaths='echo $PATH | tr : \\n'
+
+## If user is not root, pass all commands via sudo ##
+if [ $UID -ne 0 ]; then
+    alias reboot='sudo reboot'                                # To reboot the System
+    alias upg='sudo apt-get update && sudo apt-get upgrade'   # To update the packages
+    alias apti='sudo apt install'                             # To install a package
+    alias aptr='sudo apt remove'                              # To remove a package
+    alias aptrp='sudo apt remove --purge'                     # To remove a package and all of its configurations
+fi
+
+## Look for packages ##
+alias aptf='dpkg --get-selections | grep'
+
+## Confirmation action ##
+alias mv='mv -i'
+alias cp='cp -i'
+alias ln='ln -i'
+
+## To find something ##
+alias findn='find . -name '
+alias findt='find . -type d -name'
+
+## To use de explorer window
+alias exp='nautilus'
+alias exps='sudo nautilus'
+
+## Calculator ##
+alias calc='bc -l'
+
+## Custom Calendar ##
+alias cal='echo -e "$(date +"%a %d %b %Y %H:%M")\n\n$(ncal -b)" | lolcat'
+
+## Just for fun ##
+alias hello='cowsay -f dragon "¡Hello there! Lets cook something" | lolcat'
+
+## Shorter... ##
+alias c='clear'  
+alias h='history'  
+alias hg='history | grep'
+
+## EXA #$
+alias ls='exa --color=always --group-directories-first --icons'
+alias l='exa'
+alias la='exa -a'
+alias ll='exa -lah --icons --group-directories-first'
+alias lt='exa --tree --level=2 --color=always --group-directories-first --icons'
+alias ltl='exa --long --tree --level=2 --color=always --group-directories-first --icons'
